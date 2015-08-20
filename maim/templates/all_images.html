@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+{%  for img in images  %}
+
+
+
+<img src="/media/{{ img.image }}" class="img-responsive" width="400px" height="auto" >
+</br> 
+
+{% endfor %}
+
+
+
+{% endblock %}
+
+
+
+
+
+

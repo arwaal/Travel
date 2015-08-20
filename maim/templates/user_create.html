@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+
+<form action='/user_create/' method='POST'>
+
+{% csrf_token %}
+
+{{ form.as_p }}
+
+
+
+<input type='submit' value='Create User'>
+
+</form>
+
+
+
+
+{% endblock %}

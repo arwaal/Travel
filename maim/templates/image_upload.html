@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+
+<form action="/image_upload/" enctype='multipart/form-data' method="POST">
+
+ {% csrf_token %}
+
+
+ {{form.as_p}}
+
+
+<input type="submit" value="Send">
+</div>
+</form>
+{{valid}}
+
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
